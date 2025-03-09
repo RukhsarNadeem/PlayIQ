@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:play_iq/views/check_email.dart';
+import 'package:play_iq/views/setting_screen.dart';
 import 'package:play_iq/views/signup_screen.dart';
 import 'package:play_iq/views/successfully.dart';
 
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.splash,
-      getPages: AppRoutes.pages,
+      home: SettingScreen(),
+      // initialRoute: Routes.splash,
+      // getPages: AppRoutes.pages,
     );
   }
 }
