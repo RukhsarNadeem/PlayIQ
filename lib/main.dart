@@ -18,8 +18,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Splash Screen',
-      theme: ThemeData.dark(),
       initialRoute: Routes.splash,
       getPages: AppRoutes.pages,
     );
